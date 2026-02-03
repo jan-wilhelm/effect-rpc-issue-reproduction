@@ -9,8 +9,10 @@ bun install
 To run:
 
 ```bash
-bun run src/client-broken.ts
+DATABASE_URL=postgres... bun run src/runner.ts
 
+# Then open a new terminal tab and try both of these commands:
+bun run src/client-broken.ts
 bun run src/client-working.ts
 ```
 
